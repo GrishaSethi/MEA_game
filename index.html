@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Means-Ends Analysis Puzzle Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Means-Ends Analysis Puzzle Game</h1>
+    
+    <div class="info-panel">
+      <h3>How to Play</h3>
+      <p>In this game, you need to transform the initial state into the goal state by applying operators.</p>
+      <ol>
+        <li>Analyze the differences between current and goal states</li>
+        <li>Choose operators that reduce those differences</li>
+        <li>Apply operators strategically to reach the goal</li>
+      </ol>
+    </div>
+    
+    <div class="level-select">
+      <h3>Select Level</h3>
+      <button id="level1">Level 1: Number Puzzle</button>
+      <button id="level2">Level 2: Block World</button>
+      <button id="level3">Level 3: Resource Management</button>
+    </div>
+    
+    <div class="game-section">
+      <div class="moves-counter">Moves: <span id="move-count">0</span></div>
+      
+      <div class="states">
+        <div class="state">
+          <h3>Current State</h3>
+          <div id="current-state"></div>
+        </div>
+        <div class="state">
+          <h3>Goal State</h3>
+          <div id="goal-state"></div>
+        </div>
+      </div>
+      
+      <div class="differences">
+        <h3>Differences Identified</h3>
+        <div id="differences"></div>
+      </div>
+      
+      <div class="controls">
+        <h3>Available Operators</h3>
+        <div class="operators" id="operators"></div>
+        <button id="analyze-btn">Analyze Differences</button>
+        <button id="reset-btn">Reset Level</button>
+      </div>
+      
+      <div class="history">
+        <h3>Action History</h3>
+        <div id="history-content"></div>
+      </div>
+      
+      <div class="success-message" id="success-message">
+        <h3>🎉 Success! 🎉</h3>
+        <p>You've successfully reached the goal state using Means-Ends Analysis!</p>
+        <p>Total moves: <span id="final-moves"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
