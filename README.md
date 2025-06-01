@@ -46,7 +46,7 @@ Means-Ends Analysis (MEA) is a problem-solving approach that:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/mea-game.git
+   git clone https://github.com/GrishaSethi/mea-game.git
    ```
 2. Open the folder:
    ```bash
